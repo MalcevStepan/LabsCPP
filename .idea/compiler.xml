@@ -7,9 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Labka_1_Stepa" />
-        <module name="Labs_kpp_other_task" />
-        <module name="LabsKPP" />
+        <module name="LabsCPP" />
+        <module name="Labs_cpp_other_task" />
+        <module name="LabsCPP" />
       </profile>
     </annotationProcessing>
   </component>
