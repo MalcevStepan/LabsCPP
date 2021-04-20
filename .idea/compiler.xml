@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Labka_1_Stepa" />
+        <module name="Labs_kpp_other_task" />
+        <module name="LabsKPP" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Labka_1_Stepa" options="-parameters" />
+      <module name="LabsKPP" options="-parameters" />
+      <module name="Labs_kpp_other_task" options="-parameters" />
+    </option>
+  </component>
+</project>
