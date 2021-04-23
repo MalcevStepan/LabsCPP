@@ -19,6 +19,7 @@ public class PrimeService {
     }
 
     public static PrimeFields calculatePrimeCheck(int value) {
+        RequestCounter.add():
         String answer;
         PrimeDTO primeDTO=new PrimeDTO(value);
         if (cache.getAnsw(primeDTO)!=null){
