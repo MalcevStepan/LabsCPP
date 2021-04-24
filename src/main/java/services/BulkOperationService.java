@@ -19,4 +19,10 @@ public class BulkOperationService {
                 .map(x -> primeService.calculatePrimeCheck(x.getValue()))
                 .collect(Collectors.toList());
     }
+    
+    public IntSummaryStatistics bulkAggregation(List<BulkFields> bulkFields) {
+        return bulkCalculation(bulkFields)
+                .stream()
+                .collect(Collectors.summarizingInt(BulkFields::getAnswer));
+    }
 }
