@@ -25,6 +25,12 @@ public class Controller {
     BulkOperationService bulkOperationService;
     @Autowired
     ResultRepository resultRepository;
+    
+    @PostMapping("/aggregation")
+    public ResponseEntity bulkAggregation(@RequestBody List<BulkFields> bulkFields) {
+        return ResponseEntity.ok(bulkOperationService.bulkAggregation(bulkFields));
+    }
+    
     @PostMapping("/bulk")
     public ResponseEntity bulkAnswer(@RequestBody List<PrimeDTO> primeDTOList) {
         return ResponseEntity.ok(bulkOperationService.bulkCalculation(primeDTOList));
